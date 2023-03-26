@@ -1,0 +1,6 @@
+{"type":"Action","local_name":"Manager","class_name":"GetOrder","content":"[Order{id=626, dish_id=28}, Order{id=625, dish_id=28}]","description":"Received order from Customer Visitor123"}
+{"type":"Action","local_name":"Manager","class_name":"GetOrder","content":"[Order{id=627, dish_id=28}]","description":"Received order from Customer Visitor124"}
+{"type":"Action","local_name":"Manager","class_name":"GetOrder","content":"[Order{id=626, dish_id=28}, Order{id=625, dish_id=28}]","description":"Received order from Customer Visitor123"}
+{"type":"Action","local_name":"Manager","class_name":"GetOrder","content":"[Order{id=627, dish_id=28}]","description":"Received order from Customer Visitor124"}
+{"type":"Action","local_name":"Manager","class_name":"GetOrder","content":"[Order{id=626, dish_id=28}, Order{id=625, dish_id=28}]","description":"Received order from Customer Visitor123"}
+{"type":"Action","local_name":"Manager","class_name":"GetOrder","content":"[Order{id=627, dish_id=28}]","description":"Received order from Customer Visitor124"}

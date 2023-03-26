@@ -1,6 +1,8 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Order {
+import java.io.Serializable;
+
+public class Order implements Serializable {
     @JsonProperty("ord_dish_id")
     private final int id;
 

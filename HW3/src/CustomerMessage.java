@@ -2,6 +2,7 @@ import jade.content.AgentAction;
 
 import java.util.HashSet;
 
+
 public class CustomerMessage implements AgentAction {
 
     private String localName;

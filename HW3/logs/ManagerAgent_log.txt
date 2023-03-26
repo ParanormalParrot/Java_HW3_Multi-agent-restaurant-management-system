@@ -1,0 +1,10 @@
+{"type":"Initialization","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager initialized"}
+{"type":"Deletion","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager agent Manager shut down"}
+{"type":"Initialization","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager initialized"}
+{"type":"Deletion","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager agent Manager shut down"}
+{"type":"Initialization","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager initialized"}
+{"type":"Deletion","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager agent Manager shut down"}
+{"type":"Initialization","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager initialized"}
+{"type":"Deletion","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager agent Manager shut down"}
+{"type":"Initialization","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager initialized"}
+{"type":"Deletion","local_name":"Manager","class_name":"ManagerAgent","content":"","description":"Manager agent Manager shut down"}

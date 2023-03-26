@@ -1,11 +1,12 @@
 import java.io.Serializable;
+import java.util.HashSet;
 
 public final class OrderMessage implements Serializable {
     private final String localName;
-    private final Menu menu;
+    private final HashSet<Order> menu;
     private final int cellId;
 
-    public OrderMessage(String localName, Menu menu, int cellId) {
+    public OrderMessage(String localName, HashSet<Order> menu, int cellId) {
         this.localName = localName;
         this.menu = menu;
         this.cellId = cellId;
@@ -15,7 +16,7 @@ public final class OrderMessage implements Serializable {
         return localName;
     }
 
-    public Menu getMenu() {
+    public HashSet<Order> getMenu() {
         return menu;
     }
 

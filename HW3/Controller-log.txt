@@ -1,0 +1,12 @@
+мар. 26, 2023 7:52:44 PM Controller addAgent
+INFO: Cook15
+мар. 26, 2023 7:52:44 PM Controller addAgent
+INFO: Cook16
+мар. 26, 2023 7:52:44 PM Controller addAgent
+INFO: Cook14
+мар. 26, 2023 7:52:44 PM Controller$1 handleInform
+INFO: ManagerAgent
+мар. 26, 2023 7:52:47 PM Controller addAgent
+INFO: Customer Visitor123
+мар. 26, 2023 7:52:50 PM Controller addAgent
+INFO: Customer Visitor124

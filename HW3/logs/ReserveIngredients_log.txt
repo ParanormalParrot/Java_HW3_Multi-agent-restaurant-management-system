@@ -1,0 +1,6 @@
+{"type":"Action","local_name":"Manager","class_name":"ReserveIngredients","content":"Customer Visitor123","description":"Ingredients reserved for Customer Visitor123"}
+{"type":"Action","local_name":"Manager","class_name":"ReserveIngredients","content":"Customer Visitor124","description":"Ingredients reserved for Customer Visitor124"}
+{"type":"Action","local_name":"Manager","class_name":"ReserveIngredients","content":"Customer Visitor123","description":"Ingredients reserved for Customer Visitor123"}
+{"type":"Action","local_name":"Manager","class_name":"ReserveIngredients","content":"Customer Visitor124","description":"Ingredients reserved for Customer Visitor124"}
+{"type":"Action","local_name":"Manager","class_name":"ReserveIngredients","content":"Customer Visitor123","description":"Ingredients reserved for Customer Visitor123"}
+{"type":"Action","local_name":"Manager","class_name":"ReserveIngredients","content":"Customer Visitor124","description":"Ingredients reserved for Customer Visitor124"}

@@ -1,0 +1,4 @@
+{"type":"Action","local_name":"Customer Visitor123","class_name":"GetFood","content":"[Order{id=626, dish_id=28}, Order{id=625, dish_id=28}]","description":"Received Order1 in cell 17"}
+{"type":"Action","local_name":"Customer Visitor124","class_name":"GetFood","content":"[Order{id=627, dish_id=28}]","description":"Received Order2 in cell 11"}
+{"type":"Action","local_name":"Customer Visitor123","class_name":"GetFood","content":"[Order{id=626, dish_id=28}, Order{id=625, dish_id=28}]","description":"Received Order1 in cell 2"}
+{"type":"Action","local_name":"Customer Visitor124","class_name":"GetFood","content":"[Order{id=627, dish_id=28}]","description":"Received Order2 in cell 3"}

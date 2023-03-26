@@ -1,0 +1,10 @@
+{"type":"Initialization","local_name":"Order1","class_name":"OrderAgent","content":"","description":"Order1 initialized"}
+{"type":"Initialization","local_name":"Order2","class_name":"OrderAgent","content":"","description":"Order2 initialized"}
+{"type":"Initialization","local_name":"Order1","class_name":"OrderAgent","content":"","description":"Order1 initialized"}
+{"type":"Initialization","local_name":"Order2","class_name":"OrderAgent","content":"","description":"Order2 initialized"}
+{"type":"Deletion","local_name":"Order1","class_name":"OrderAgent","content":"","description":"Order1 shut down"}
+{"type":"Deletion","local_name":"Order2","class_name":"OrderAgent","content":"","description":"Order2 shut down"}
+{"type":"Initialization","local_name":"Order1","class_name":"OrderAgent","content":"","description":"Order1 initialized"}
+{"type":"Initialization","local_name":"Order2","class_name":"OrderAgent","content":"","description":"Order2 initialized"}
+{"type":"Deletion","local_name":"Order1","class_name":"OrderAgent","content":"","description":"Order1 shut down"}
+{"type":"Deletion","local_name":"Order2","class_name":"OrderAgent","content":"","description":"Order2 shut down"}

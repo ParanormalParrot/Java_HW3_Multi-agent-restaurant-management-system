@@ -3,9 +3,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashSet;
 
 public class CookList {
-    @JsonProperty("cooks")
+    @JsonProperty("cookers")
     private HashSet<Cook> cooks;
-
+    public CookList() {}
     public HashSet<Cook> getCooks() {
         return cooks;
     }

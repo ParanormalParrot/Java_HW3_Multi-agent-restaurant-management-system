@@ -1,0 +1,20 @@
+{"type":"Initialization","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer Visitor123 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor123 shut down"}
+{"type":"Initialization","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer Visitor124 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor124 shut down"}
+{"type":"Initialization","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer Visitor123 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor123 shut down"}
+{"type":"Initialization","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer Visitor124 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor124 shut down"}
+{"type":"Initialization","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer Visitor123 initialized"}
+{"type":"Initialization","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer Visitor124 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor124 shut down"}
+{"type":"Deletion","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor123 shut down"}
+{"type":"Initialization","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer Visitor123 initialized"}
+{"type":"Initialization","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer Visitor124 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor123 shut down"}
+{"type":"Deletion","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor124 shut down"}
+{"type":"Initialization","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer Visitor123 initialized"}
+{"type":"Initialization","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer Visitor124 initialized"}
+{"type":"Deletion","local_name":"Customer Visitor123","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor123 shut down"}
+{"type":"Deletion","local_name":"Customer Visitor124","class_name":"CustomerAgent","content":"","description":"Customer agent Customer Visitor124 shut down"}

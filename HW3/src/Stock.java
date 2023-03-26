@@ -9,7 +9,7 @@ public class Stock {
     public HashSet<Product> getStorage() {
         return storage;
     }
-
+    public Stock() {}
     public Stock(HashSet<Product> storage) {
         this.storage = storage;
     }
