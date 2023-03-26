@@ -86,14 +86,6 @@ public class Recipe {
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = id;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (description != null ? description.hashCode() : 0);
-        temp = Double.doubleToLongBits(time);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (process != null ? process.hashCode() : 0);
-        return result;
+        return Objects.hash(id, name, description, time, process);
     }
 }

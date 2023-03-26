@@ -31,30 +31,6 @@ public class Customer {
         this.name = name;
     }
 
-    public Timestamp getStart() {
-        return start;
-    }
-
-    public void setStart(Timestamp start) {
-        this.start = start;
-    }
-
-    public Timestamp getEnd() {
-        return end;
-    }
-
-    public void setEnd(Timestamp end) {
-        this.end = end;
-    }
-
-    public int getTotal() {
-        return total;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
     public HashSet<Order> getOrder() {
         return order;
     }

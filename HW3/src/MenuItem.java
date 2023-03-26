@@ -1,6 +1,8 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
+import java.util.Objects;
+
 public class MenuItem implements Serializable {
 
     @JsonProperty("menu_dish_id")
@@ -29,32 +31,9 @@ public class MenuItem implements Serializable {
         return Id;
     }
 
-    public void setId(int id) {
-        this.Id = id;
-    }
 
     public int getRecipeId() {
         return recipeId;
-    }
-
-    public void setRecipeId(int recipeId) {
-        this.recipeId = recipeId;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-
-    public void setAvailable(boolean available) {
-        isAvailable = available;
     }
 
     @Override
@@ -82,10 +61,6 @@ public class MenuItem implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = Id;
-        result = 31 * result + recipeId;
-        result = 31 * result + price;
-        result = 31 * result + (isAvailable ? 1 : 0);
-        return result;
+        return Objects.hash(Id, recipeId, price, isAvailable);
     }
 }

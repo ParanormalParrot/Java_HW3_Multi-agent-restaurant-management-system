@@ -29,13 +29,6 @@ public class Cook {
         this.name = name;
     }
 
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
 
     @Override
     public String toString() {
@@ -58,8 +51,5 @@ public class Cook {
         return Objects.equals(name, cook.name);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, available);
-    }
+
 }
