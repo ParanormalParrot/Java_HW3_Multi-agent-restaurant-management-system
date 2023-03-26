@@ -12,7 +12,7 @@ public class OrderAgent extends Agent implements Serializable {
         Object[] args = getArguments();
         menu = (Menu) args[0];
         customerName = (String) args[1];
-        System.out.println("Manager created new order " + this.getLocalName() + ", now it's ready to go!");
+        System.out.println("Order agent " + this.getLocalName() + ", is ready.");
         addBehaviour(new OrderReady());
     }
 

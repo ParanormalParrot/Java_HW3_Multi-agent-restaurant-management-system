@@ -16,7 +16,7 @@ public class GetOrder extends Behaviour {
                 System.out.println("Received " + messageFromOrder.getLocalName() +
                         " in cell " + messageFromOrder.getCellId() +
                         ": " + messageFromOrder.getMenu());
-                JSONManager.writeLog(new JSONAction(
+                JsonManager.writeLog(new JsonAction(
                         "Action",
                         myAgent.getLocalName(),
                         getClass().getName(),

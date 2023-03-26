@@ -4,7 +4,7 @@ import java.io.Serializable;
 public class MenuItem implements Serializable {
 
     @JsonProperty("menu_dish_id")
-    private int itemId;
+    private int Id;
 
     @JsonProperty("menu_dish_card")
     private int recipeId;
@@ -19,18 +19,18 @@ public class MenuItem implements Serializable {
     }
 
     public MenuItem(int id, int recipeId, int price, boolean isAvailable) {
-        this.itemId = id;
+        this.Id = id;
         this.recipeId = recipeId;
         this.price = price;
         this.isAvailable = isAvailable;
     }
 
-    public int getItemId() {
-        return itemId;
+    public int getId() {
+        return Id;
     }
 
-    public void setItemId(int itemId) {
-        this.itemId = itemId;
+    public void setId(int id) {
+        this.Id = id;
     }
 
     public int getRecipeId() {
@@ -60,7 +60,7 @@ public class MenuItem implements Serializable {
     @Override
     public String toString() {
         return "MenuItem{" +
-                "id=" + itemId +
+                "id=" + Id +
                 ", recipe_id=" + recipeId +
                 ", price=" + price +
                 ", isAvailable=" + isAvailable +
@@ -74,7 +74,7 @@ public class MenuItem implements Serializable {
 
         MenuItem menuItem = (MenuItem) o;
 
-        if (itemId != menuItem.itemId) return false;
+        if (Id != menuItem.Id) return false;
         if (recipeId != menuItem.recipeId) return false;
         if (price != menuItem.price) return false;
         return isAvailable == menuItem.isAvailable;
@@ -82,7 +82,7 @@ public class MenuItem implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = itemId;
+        int result = Id;
         result = 31 * result + recipeId;
         result = 31 * result + price;
         result = 31 * result + (isAvailable ? 1 : 0);

@@ -8,20 +8,20 @@ public class CustomerAgent extends Agent {
     protected void setup() {
         Object[] args = getArguments();
         menu = (HashSet<Order>) args[0];
-        System.out.println("Hello from " + getAID().getLocalName() + " agent, now it's ready to go!");
+        System.out.println("Customer agent" + getAID().getLocalName() + "is ready.");
         addBehaviour(new MakeOrder());
         addBehaviour(new GetFood());
     }
 
     @Override
     protected void takeDown() {
-        System.out.println(getAID().getLocalName() + " is shutting down");
-        JSONManager.writeLog(new JSONAction(
+        System.out.println("Customer agent" + getAID().getLocalName() + " is shutting down");
+        JsonManager.writeLog(new JsonAction(
                 "Deletion",
                 getLocalName(),
                 getClass().getName(),
                 "",
-                getLocalName() + " shut down"));
+                "Customer agent " + getLocalName() + " shut down"));
         super.takeDown();
     }
 }

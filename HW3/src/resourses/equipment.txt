@@ -1,0 +1,22 @@
+{
+  "equipment": [
+    {
+      "equip_id": 12,
+      "equip_type": 2,
+      "equip_name": "Wooden spatula",
+      "equip_active": true
+    },
+    {
+      "equip_id": 13,
+      "equip_type": 2,
+      "equip_name": "Metal Pot",
+      "equip_active": false
+    },
+    {
+      "equip_id": 14,
+      "equip_type": 25,
+      "equip_name": "Lasagna pan",
+      "equip_active": true
+    }
+  ]
+}

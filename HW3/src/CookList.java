@@ -10,8 +10,6 @@ public class CookList {
         return cooks;
     }
 
-    public CookList() {}
-
     public CookList(HashSet<Cook> cooks) {
         this.cooks = cooks;
     }

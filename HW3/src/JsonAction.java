@@ -1,7 +1,7 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 
-public class JSONAction {
+public class JsonAction {
     @JsonProperty("type")
     private String type;
 
@@ -57,7 +57,7 @@ public class JSONAction {
         this.description = description;
     }
 
-    public JSONAction(String type, String localName, String className, String content, String description) {
+    public JsonAction(String type, String localName, String className, String content, String description) {
         this.type = type;
         this.localName = localName;
         this.className = className;

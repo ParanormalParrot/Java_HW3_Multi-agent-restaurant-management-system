@@ -1,8 +1,12 @@
 
 import jade.core.Agent;
 import jade.core.behaviours.TickerBehaviour;
+import jade.wrapper.AgentController;
 
-public class CustomerCreator {
+import java.util.HashSet;
+
+
+public class CustomerCreator extends TickerBehaviour {
     int customerId = 0;
 
     public CustomerCreator(Agent a, long period) {
@@ -11,9 +15,9 @@ public class CustomerCreator {
 
     @Override
     protected void onTick() {
-        if (customerId < ((ModuleLayer.Controller) myAgent).customers.getCustomers().size()) {
-            ((ModuleLayer.Controller) myAgent).addAgent("Customer " + ((ModuleLayer.Controller) myAgent).customers.getCustomers().get(customerId++).getName(),
-                    CustomerAgent.class.getName(), "Customer-Container", new Menu[]{((ModuleLayer.Controller) myAgent).menu});
+        if (customerId < ((Controller) myAgent).customers.getCustomers().size()) {
+            ((Controller) myAgent).addAgent("Customer " + ((Controller) myAgent).customers.getCustomers().get(customerId++).getName(),
+                    CustomerAgent.class.getName(), "Customer-Container", new Menu[]{((Controller) myAgent).menu});
         }
     }
 }

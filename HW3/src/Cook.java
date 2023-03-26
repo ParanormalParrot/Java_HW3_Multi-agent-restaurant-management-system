@@ -60,9 +60,6 @@ public class Cook {
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (available ? 1 : 0);
-        return result;
+        return Objects.hash(id, name, available);
     }
 }

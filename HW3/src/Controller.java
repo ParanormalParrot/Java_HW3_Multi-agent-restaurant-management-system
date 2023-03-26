@@ -1,29 +1,45 @@
-import jade.core.Agent;
 
+import jade.content.lang.Codec;
+import jade.content.lang.sl.SLCodec;
+import jade.content.onto.OntologyException;
+import jade.content.onto.basic.Action;
+import jade.core.Runtime;
+import jade.core.*;
+import jade.domain.FIPANames;
+import jade.domain.JADEAgentManagement.CreateAgent;
+import jade.domain.JADEAgentManagement.JADEManagementOntology;
+import jade.lang.acl.ACLMessage;
+import jade.proto.AchieveREInitiator;
+import jade.wrapper.AgentController;
+import jade.wrapper.ContainerController;
+import jade.wrapper.StaleProxyException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jade.core.Runtime;
+import jade.wrapper.StaleProxyException;
 
 public class Controller extends Agent {
 
     private final Logger logger = LoggerManager.createLogger("Java_HW3/logs/" + this.getClass().getName());
 
-    public Menu menu;
+    public static Menu menu;
     public static RecipeBook recipes;
     public static IngredientTypeList ingredientTypes;
     public Stock storage;
     public EquipmentTypeList equipmentTypes;
-    public EquipmentList equipment;
+    public static EquipmentList equipment;
     public CookList cooks;
     public OperationTypeList operationTypes;
     public CustomerQueue customers;
 
     protected void setup() {
-        System.out.println("Hello from " + getAID().getLocalName() + " agent, now it's ready to go!");
+        System.out.println("Controller agent" + getAID().getLocalName() + " is ready");
         readData();
-        addBehaviour(new CreateCustomer(this, 3000));
-        addBehaviour(new CreateManager());
+        addBehaviour(new CustomerCreator(this, 3000));
+        addBehaviour(new ManagerCreator());
     }
 
     private void readData() {
@@ -45,12 +61,6 @@ public class Controller extends Agent {
                 .getOperationTypes()));
         customers = new CustomerQueue(new ArrayList<>(JsonManager.readFromFile("resources/customers.txt", CustomerQueue.class)
                 .getCustomers()));
-
-//        List<AID> cookAgents = this.cookers.values()
-//                .stream()
-//                .map(cook -> spawnActor(cook.getName(), "agents.cook.CookAgent", "Cooker", new Object[]{cook}))
-//                .collect(Collectors.toList());
-//        logger.log(Level.INFO, cookAgents.toString());
     }
 
     public AID addAgent(String name, String className, String containerName, Object[] args) {
@@ -128,7 +138,7 @@ public class Controller extends Agent {
                 getLocalName(),
                 getClass().getName(),
                 "",
-                getLocalName() + " shut down"));
+                "Controller agent" + getLocalName() + " shut down"));
         super.takeDown();
     }
 }

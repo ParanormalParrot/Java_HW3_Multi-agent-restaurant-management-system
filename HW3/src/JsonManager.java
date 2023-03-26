@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 
-public class JSONManager {
+public class JsonManager {
     public static void writeException(JsonException jsonException) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
@@ -25,7 +25,7 @@ public class JSONManager {
         System.exit(1);
     }
 
-    public static void writeLog(JSONAction jsonAction) {
+    public static void writeLog(JsonAction jsonAction) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             File file = new File("logs/" + jsonAction.getClassName() + "_log.txt");
