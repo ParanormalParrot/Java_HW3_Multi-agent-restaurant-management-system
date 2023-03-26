@@ -1,4 +1,3 @@
-
 import jade.content.lang.Codec;
 import jade.content.lang.sl.SLCodec;
 import jade.content.onto.OntologyException;
@@ -13,17 +12,15 @@ import jade.proto.AchieveREInitiator;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
+
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import jade.core.Runtime;
-import jade.wrapper.StaleProxyException;
 
 public class Controller extends Agent {
 
-    private final Logger logger = LoggerManager.createLogger("Java_HW3/logs/" + this.getClass().getName());
+    private final Logger logger = LoggerManager.createLogger(this.getClass().getName());
 
     public static Menu menu;
     public static RecipeBook recipes;
@@ -40,6 +37,7 @@ public class Controller extends Agent {
         readData();
         addBehaviour(new CustomerCreator(this, 3000));
         addBehaviour(new ManagerCreator());
+        addBehaviour(new CookCreator());
     }
 
     private void readData() {

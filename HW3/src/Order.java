@@ -1,7 +1,5 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.Objects;
-
 public class Order {
     @JsonProperty("ord_dish_id")
     private final int id;
