@@ -8,7 +8,7 @@ import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
 import jade.wrapper.ContainerController;
 
-public class Ready extends OneShotBehaviour {
+public class OrderReady extends OneShotBehaviour {
     @Override
     public void action() {
         System.out.println(myAgent.getLocalName() + " send message to " + ((OrderAgent)myAgent).getCustomerName());
